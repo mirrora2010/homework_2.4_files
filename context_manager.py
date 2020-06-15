@@ -12,7 +12,7 @@ class File(object):
 
     def __exit__(self, type, value, traceback):
         print(f'Выход из программы в: {datetime.datetime.utcnow()}')
-        print(f"время работы программы: {time.time() - self.time}")
+        print(f'Время работы программы: {time.time() - self.time}')
         self.file_object.close()
 
 lines = ''
